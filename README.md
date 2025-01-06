@@ -4,8 +4,8 @@
 *italics*
 **bold**
 ***both***
-#Created By
+## Created By
 - Brayden O'Briant
-*Languages Used
+## Languages Used
 - Python
 
