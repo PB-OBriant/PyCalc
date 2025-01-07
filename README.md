@@ -6,11 +6,12 @@
 ***both***
 ## Created By
 - Brayden O'Briant
+  
 ## Languages Used
 - Python
   
 ## Frameworks and Libraries
-- TBD
+- Tkinter
   
 ## APIs
-- TBD
+- none needed
