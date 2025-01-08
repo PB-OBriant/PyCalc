@@ -25,11 +25,10 @@ def button_click(operation):
         # Update result label with the calculated result
         result_label.config(text=f"Result: {result}")
 
+    # catch errors that the user may input to break the program
     except ValueError:
-        # Handle cases where input is not a valid number
         result_label.config(text="Error: Invalid Input")
     except Exception as e:
-        # Handle unexpected errors
         result_label.config(text=f"Error: {e}")
 
 # Create application window
