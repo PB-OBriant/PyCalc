@@ -13,6 +13,7 @@ def button_click(value):
 # Function to evaluate the expression
 def evaluate_expression():
     global expression
+    expression = entry.get()
     try:
         result = eval(expression)
         result_label.config(text=f"Result: {result}")
