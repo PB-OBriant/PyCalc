@@ -11,7 +11,7 @@ def button_click(value):
     entry.insert(tk.END, expression)
 
 # Function to evaluate the expression
-def evaluate_expression():
+def evaluate_expression(event=None): # event=None allows the function to be called without an event
     global expression
     expression = entry.get()
     try:
@@ -34,6 +34,9 @@ root = tk.Tk()
 root.title("Calculator")
 root.geometry("300x400")
 root.config(bg="black")
+
+# Bind the Enter key to the evaluate_expression function
+root.bind('<Return>', evaluate_expression)
 
 # Create a single entry field for numbers
 entry = tk.Entry(root, width=20, bg="gray", fg='white')
