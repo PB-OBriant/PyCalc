@@ -8,6 +8,7 @@
   
 ## Frameworks and Libraries
 - Tkinter
+- CustomTkinter
   
 ## APIs
 - none needed
