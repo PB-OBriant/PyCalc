@@ -1,4 +1,5 @@
 import tkinter as tk
+import math
 
 # Initialize the expression string
 expression = ""
@@ -15,7 +16,7 @@ def evaluate_expression(event=None): # event=None allows the function to be call
     global expression
     expression = entry.get()
     try:
-        result = eval(expression)
+        result = eval(expression, {"__builtins__": None}, {"math": math})
         result_label.config(text=f"Result: {result}")
         expression = str(result)
     except Exception as e:
