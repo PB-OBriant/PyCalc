@@ -1,4 +1,5 @@
-import calculator_functions
+# will use this file later to run calculator_gui and more
+"""import calculator_functions
 
 def main():
 
@@ -9,4 +10,4 @@ def main():
     return
 
 if __name__ == "__main__":
-    main()
+    main()"""
