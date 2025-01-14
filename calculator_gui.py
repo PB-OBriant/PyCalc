@@ -17,6 +17,8 @@ def evaluate_expression(event=None): # event=None allows the function to be call
     expression = entry.get()
     try:
         result = eval(expression, {"__builtins__": None}, {"math": math})
+        # round to 10 decimal places
+        result = round(result, 10)
         result_label.configure(text=f"Result: {result}")
         expression = str(result)
     except Exception as e:
